@@ -9,18 +9,18 @@ with transparent rule-based logic and no external AI API requirement.
 
 ## Current Status
 
-**NEXT-OPS-006-LOCAL-RELEASE-CANDIDATE**
+**NEXT-OPS-007-GITHUB-PUBLIC-SHOWCASE**
 
-This local release candidate includes:
+This public showcase version includes:
 
 - Product-style Streamlit dashboard
 - Markdown and HTML report exports
 - A small public demo output pair copied into `portfolio/demo_outputs/`
 - Screenshot instructions prepared in `portfolio/showcase_screenshots/`
 - Public release checklist and showcase manifest
-- Local Git repository initialized with a release-candidate commit
+- GitHub public repository published on `main`
 
-No GitHub remote has been added and no push has been executed.
+GitHub About/topics, screenshots, and profile pin are still pending manual setup.
 
 ## Value proposition
 
@@ -240,8 +240,9 @@ This project intentionally does not include:
 - NEXT-OPS-003: complete - evidence-rich engine, explainable scores, configurable ROI, and structured roadmaps
 - NEXT-OPS-004: complete - product-style Streamlit dashboard polish and screenshot guide
 - NEXT-OPS-005: complete - report exports, demo asset generator, and public showcase docs
-- NEXT-OPS-006: local release candidate - local commit, demo outputs, and release preparation
-- NEXT-OPS-007: GitHub remote setup and public push after explicit user authorization
+- NEXT-OPS-006: complete - local commit, demo outputs, and release preparation
+- NEXT-OPS-007: public showcase - GitHub remote setup and public push completed
+- NEXT-OPS-008: GitHub profile pin and final showcase check
 - Future: optional, explicit LLM-assisted analysis with privacy controls
 - Future: optional CRM, email, calendar, and reporting integrations with human approval
 
