@@ -9,7 +9,7 @@
 
 ## Current Status
 
-NEXT-OPS-006-LOCAL-RELEASE-CANDIDATE
+NEXT-OPS-007-GITHUB-PUBLIC-SHOWCASE
 
 ## Core Features
 
@@ -30,7 +30,11 @@ NEXT-OPS-006-LOCAL-RELEASE-CANDIDATE
 - README showcase section prepared
 - Public release checklist prepared
 - Local git release candidate created
-- GitHub remote/push pending user authorization
+- Branch renamed to `main`
+- GitHub remote added after user authorization
+- GitHub public repository published
+- GitHub README verified online
+- GitHub key files verified online
 
 ## Safety Boundary
 
@@ -54,11 +58,15 @@ NEXT-OPS-006-LOCAL-RELEASE-CANDIDATE
 
 - Capture real screenshots
 - Enable README screenshot image links after screenshots exist
-- Add GitHub remote only after explicit user authorization
-- Push only after explicit user authorization
 - Add GitHub About description
 - Add GitHub topics
 - Pin the repository to the GitHub profile
+
+## GitHub Repository
+
+```text
+https://github.com/CHENXJC/NextOpsAgent
+```
 
 ## Not Included
 

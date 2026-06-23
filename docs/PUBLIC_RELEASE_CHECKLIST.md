@@ -32,8 +32,8 @@
 - [ ] screenshots referenced in README
 - [x] repository initialized
 - [x] first local commit created
-- [ ] GitHub repo created
-- [ ] pushed to main
+- [x] GitHub repo created
+- [x] pushed to main
 - [ ] About description added
 - [ ] topics added
 - [ ] profile pin checked

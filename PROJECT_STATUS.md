@@ -1,8 +1,8 @@
 # NextOpsAgent Project Status
 
-## NEXT-OPS-006-LOCAL-RELEASE-CANDIDATE
+## NEXT-OPS-007-GITHUB-PUBLIC-SHOWCASE
 
-Current stage: **GitHub Public Showcase Release Preparation**
+Current stage: **GitHub Public Showcase**
 
 ### Completed in this stage
 
@@ -18,8 +18,13 @@ Current stage: **GitHub Public Showcase Release Preparation**
 - Public showcase manifest updated.
 - Local Git repository initialized.
 - Local release-candidate commit created.
-- No GitHub remote added.
-- No push executed.
+- Branch renamed to `main`.
+- GitHub remote `origin` added.
+- Project pushed to GitHub public repository.
+- GitHub README verified online.
+- GitHub key files verified online.
+- GitHub About description and topics are pending manual setup.
+- GitHub profile pin is pending.
 
 ### Demo output sample source
 
@@ -73,14 +78,33 @@ streamlit run app.py
 - No website scraping was added.
 - Bulk generated outputs remain under ignored `outputs/demo_reports/`.
 - Portfolio demo outputs are small, fictional, and safe for showcase review.
-- No Git remote was added.
-- No Git push was performed.
+- GitHub remote was added only after explicit user authorization.
+- Git push was performed only after explicit user authorization.
+- No force push was performed.
+
+### GitHub repository
+
+```text
+https://github.com/CHENXJC/NextOpsAgent
+```
+
+### GitHub publication status
+
+- Branch: `main`
+- Remote: `origin https://github.com/CHENXJC/NextOpsAgent.git`
+- Initial release commit pushed: `65965cd`
+- GitHub README: **verified online**
+- Key files/directories: **verified online**
+- GitHub About description: **pending manual setup**
+- GitHub topics: **pending manual setup**
+- Screenshots: **pending manual capture**
+- Profile pin: **pending manual setup**
 
 ### Next suggested stage
 
-**NEXT-OPS-007 GitHub Remote Setup + Public Push**
+**NEXT-OPS-008 GitHub Profile Pin / Final Showcase Check**
 
-- Wait for explicit user authorization.
-- Add GitHub remote only after approval.
-- Push only after approval.
-- Add GitHub About description, topics, and profile pin manually after publication.
+- Set GitHub About description and topics in the GitHub web UI.
+- Capture and upload real screenshots.
+- Pin the repository to the GitHub profile.
+- Do a final online README and portfolio review.
