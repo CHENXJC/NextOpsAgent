@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NextOpsAgent Workflow Diagnosis Report</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f6f7fb;
+            color: #172033;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 48px 24px 72px;
+        }
+        .hero {
+            background: #ffffff;
+            border: 1px solid #e6e9f0;
+            border-radius: 28px;
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.07);
+            padding: 36px;
+            margin-bottom: 22px;
+        }
+        h1 {
+            font-size: 42px;
+            letter-spacing: -0.04em;
+            line-height: 1;
+            margin: 0 0 12px;
+        }
+        h2 {
+            font-size: 26px;
+            letter-spacing: -0.025em;
+            margin: 36px 0 14px;
+        }
+        h3 {
+            margin: 0 0 10px;
+        }
+        h4 {
+            margin: 0 0 8px;
+        }
+        .subtitle {
+            color: #667085;
+            font-size: 18px;
+            margin: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 14px;
+        }
+        .summary-card,
+        .card {
+            background: #ffffff;
+            border: 1px solid #e6e9f0;
+            border-radius: 22px;
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+            padding: 20px;
+            margin-bottom: 14px;
+        }
+        .compact {
+            box-shadow: none;
+        }
+        .label {
+            color: #667085;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .value {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-top: 6px;
+        }
+        .badge {
+            display: inline-block;
+            background: #f8fafc;
+            border: 1px solid #e6e9f0;
+            border-radius: 999px;
+            color: #344054;
+            font-size: 12px;
+            font-weight: 700;
+            margin: 2px 4px 2px 0;
+            padding: 6px 9px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border: 1px solid #e6e9f0;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+        th,
+        td {
+            border-bottom: 1px solid #e6e9f0;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #f8fafc;
+            color: #344054;
+            font-size: 12px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        pre {
+            background: #ffffff;
+            border: 1px solid #e6e9f0;
+            border-radius: 18px;
+            overflow-x: auto;
+            padding: 18px;
+            white-space: pre-wrap;
+        }
+        .note {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 20px;
+            color: #92400e;
+            padding: 18px 20px;
+        }
+        .footer {
+            color: #667085;
+            font-size: 13px;
+            margin-top: 34px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <h1>NextOpsAgent Workflow Diagnosis Report</h1>
+            <p class="subtitle">
+                A local-first workflow automation diagnosis for SME operations.
+            </p>
+            <p>
+                <span class="badge">Local-first</span>
+                <span class="badge">Explainable scoring</span>
+                <span class="badge">Consultant-style report</span>
+            </p>
+        </section>
+
+        <section>
+            <h2>Executive Summary</h2>
+            <div class="grid"><div class="summary-card"><div class="label">Business Type</div><div class="value">Tutoring</div></div><div class="summary-card"><div class="label">Workflow Complexity</div><div class="value">Complex</div></div><div class="summary-card"><div class="label">Bottlenecks Found</div><div class="value">6</div></div><div class="summary-card"><div class="label">Top Automation Priority</div><div class="value">No Structured Lead Tracking — 90.8/100 (High Priority)</div></div><div class="summary-card"><div class="label">Estimated Monthly Time Saved</div><div class="value">44.0–83.0 hours</div></div></div>
+        </section>
+
+        <section>
+            <h2>Original Workflow</h2>
+            <pre>A small tutoring business receives parent enquiries through WeChat, email, and phone. Staff copy lead details into Excel and manually follow up with each parent. Some leads wait days for a reply, and the owner prepares a weekly report by copying the same figures into another spreadsheet.</pre>
+        </section>
+
+        <section>
+            <h2>Detected Workflow Steps</h2>
+            <div class="card">
+                <ol><li>A small tutoring business receives parent enquiries through WeChat</li>
+<li>email</li>
+<li>and phone</li>
+<li>Staff copy lead details into Excel</li>
+<li>manually follow up with each parent</li>
+<li>Some leads wait days for a reply</li>
+<li>and the owner prepares a</li>
+<li>weekly report by copying the same figures into another spreadsheet</li></ol>
+            </div>
+        </section>
+
+        <section>
+            <h2>Evidence Snippets</h2>
+            <div class="card">
+                <ul><li>A small tutoring business receives parent enquiries through WeChat, email, and phone.</li>
+<li>Staff copy lead details into Excel and manually follow up with each parent.</li>
+<li>Some leads wait days for a reply, and the owner prepares a weekly report by copying the same figures into another spreadsheet.</li></ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Bottleneck Diagnosis</h2>
+            
+            <div class="card">
+                <h3>Manual Data Entry</h3>
+                <p>
+                    <span class="badge">Data Entry</span>
+                    <span class="badge">High Severity</span>
+                    <span class="badge">High Confidence</span>
+                </p>
+                <p>Staff repeatedly transfer operational information into spreadsheets by hand.</p>
+                <ul>
+                    <li><strong>Evidence:</strong> Staff copy lead details into Excel and manually follow up with each parent.</li>
+                    <li><strong>Impact:</strong> May create duplicated work and increase data-entry error risk.</li>
+                    <li><strong>Suggested Fix:</strong> Capture required fields once and write them to a structured shared record.</li>
+                    <li><strong>Automation Pattern:</strong> Structured intake form</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Manual Follow-up</h3>
+                <p>
+                    <span class="badge">Customer Follow-up</span>
+                    <span class="badge">High Severity</span>
+                    <span class="badge">Medium Confidence</span>
+                </p>
+                <p>Follow-up timing depends on staff memory and repeated manual actions.</p>
+                <ul>
+                    <li><strong>Evidence:</strong> Staff copy lead details into Excel and manually follow up with each parent.</li>
+                    <li><strong>Impact:</strong> May delay customer response and reduce conversion rate.</li>
+                    <li><strong>Suggested Fix:</strong> Assign an owner, next-action date, and reminder rule to each active lead.</li>
+                    <li><strong>Automation Pattern:</strong> Automated follow-up reminder</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Manual Reporting</h3>
+                <p>
+                    <span class="badge">Reporting</span>
+                    <span class="badge">Medium Severity</span>
+                    <span class="badge">High Confidence</span>
+                </p>
+                <p>Recurring reports require manual collection, checking, and formatting.</p>
+                <ul>
+                    <li><strong>Evidence:</strong> Some leads wait days for a reply, and the owner prepares a weekly report by copying the same figures into another spreadsheet.</li>
+                    <li><strong>Impact:</strong> May make weekly reporting slow and inconsistent.</li>
+                    <li><strong>Suggested Fix:</strong> Standardize metric fields and generate the recurring summary from source data.</li>
+                    <li><strong>Automation Pattern:</strong> Weekly report generator</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Scattered Customer Information</h3>
+                <p>
+                    <span class="badge">Information Management</span>
+                    <span class="badge">High Severity</span>
+                    <span class="badge">High Confidence</span>
+                </p>
+                <p>Customer context is distributed across messaging and email channels without a shared CRM record.</p>
+                <ul>
+                    <li><strong>Evidence:</strong> A small tutoring business receives parent enquiries through WeChat, email, and phone.</li>
+                    <li><strong>Impact:</strong> May hide customer history, weaken handovers, and create inconsistent service.</li>
+                    <li><strong>Suggested Fix:</strong> Create one customer record with channel, status, owner, and last-contact fields.</li>
+                    <li><strong>Automation Pattern:</strong> Centralized customer database</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>No Structured Lead Tracking</h3>
+                <p>
+                    <span class="badge">Lead Tracking</span>
+                    <span class="badge">High Severity</span>
+                    <span class="badge">High Confidence</span>
+                </p>
+                <p>Leads or enquiries have no consistent owner, status, next action, or shared history.</p>
+                <ul>
+                    <li><strong>Evidence:</strong> A small tutoring business receives parent enquiries through WeChat, email, and phone.</li>
+                    <li><strong>Impact:</strong> May cause missed leads, inconsistent follow-up, and lower conversion visibility.</li>
+                    <li><strong>Suggested Fix:</strong> Introduce a lightweight lead tracker with required ownership and status fields.</li>
+                    <li><strong>Automation Pattern:</strong> CRM-lite lead tracker</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Delayed Customer Response</h3>
+                <p>
+                    <span class="badge">Customer Response</span>
+                    <span class="badge">High Severity</span>
+                    <span class="badge">Medium Confidence</span>
+                </p>
+                <p>Customers or leads wait for acknowledgement or the next workflow action.</p>
+                <ul>
+                    <li><strong>Evidence:</strong> Some leads wait days for a reply, and the owner prepares a weekly report by copying the same figures into another spreadsheet.</li>
+                    <li><strong>Impact:</strong> May reduce customer trust, conversion rate, and service consistency.</li>
+                    <li><strong>Suggested Fix:</strong> Use approved response templates, acknowledgements, and overdue alerts.</li>
+                    <li><strong>Automation Pattern:</strong> Response template assistant</li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>Automation Opportunity Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bottleneck</th>
+                        <th>Category</th>
+                        <th>Total Score</th>
+                        <th>Priority</th>
+                        <th>Solution Type</th>
+                        <th>Difficulty</th>
+                    </tr>
+                </thead>
+                <tbody>
+            <tr>
+                <td>No Structured Lead Tracking</td>
+                <td>Lead Tracking</td>
+                <td>90.8/100</td>
+                <td><span class="badge">High Priority</span></td>
+                <td>CRM-lite Workflow</td>
+                <td>Medium</td>
+            </tr>
+            
+            <tr>
+                <td>Manual Follow-up</td>
+                <td>Customer Follow-up</td>
+                <td>89.8/100</td>
+                <td><span class="badge">High Priority</span></td>
+                <td>Reminder Automation</td>
+                <td>Easy</td>
+            </tr>
+            
+            <tr>
+                <td>Manual Data Entry</td>
+                <td>Data Entry</td>
+                <td>89.5/100</td>
+                <td><span class="badge">High Priority</span></td>
+                <td>Form + Spreadsheet Automation</td>
+                <td>Easy</td>
+            </tr>
+            
+            <tr>
+                <td>Scattered Customer Information</td>
+                <td>Information Management</td>
+                <td>84.6/100</td>
+                <td><span class="badge">High Priority</span></td>
+                <td>Data Centralization</td>
+                <td>Medium</td>
+            </tr>
+            
+            <tr>
+                <td>Delayed Customer Response</td>
+                <td>Customer Response</td>
+                <td>82.1/100</td>
+                <td><span class="badge">High Priority</span></td>
+                <td>Customer Response Assistant</td>
+                <td>Hard</td>
+            </tr>
+            
+            <tr>
+                <td>Manual Reporting</td>
+                <td>Reporting</td>
+                <td>75.3/100</td>
+                <td><span class="badge">Medium Priority</span></td>
+                <td>Reporting Automation</td>
+                <td>Easy</td>
+            </tr>
+            </tbody>
+            </table>
+            
+            <div class="card compact">
+                <h4>No Structured Lead Tracking</h4>
+                <ul>
+                    <li>Lead Tracking work is likely to recur whenever the described workflow runs (score 90/100).</li>
+                    <li>The evidence indicates ongoing staff handling and handoffs (score 86/100).</li>
+                    <li>A high-severity bottleneck can create inconsistent or missing records (score 90/100).</li>
+                    <li>The category&#x27;s likely effect on customer or internal cycle time produces a 98/100 delay score.</li>
+                    <li>The suggested pattern—CRM-lite lead tracker—can be implemented with explicit rules (score 94/100).</li>
+                </ul>
+            </div>
+            
+            <div class="card compact">
+                <h4>Manual Follow-up</h4>
+                <ul>
+                    <li>Customer Follow-up work is likely to recur whenever the described workflow runs (score 93/100).</li>
+                    <li>The evidence indicates ongoing staff handling and handoffs (score 90/100).</li>
+                    <li>A high-severity bottleneck can create inconsistent or missing records (score 73/100).</li>
+                    <li>The category&#x27;s likely effect on customer or internal cycle time produces a 98/100 delay score.</li>
+                    <li>The suggested pattern—Automated follow-up reminder—can be implemented with explicit rules (score 98/100).</li>
+                </ul>
+            </div>
+            
+            <div class="card compact">
+                <h4>Manual Data Entry</h4>
+                <ul>
+                    <li>Data Entry work is likely to recur whenever the described workflow runs (score 98/100).</li>
+                    <li>The evidence indicates ongoing staff handling and handoffs (score 98/100).</li>
+                    <li>A high-severity bottleneck can create inconsistent or missing records (score 88/100).</li>
+                    <li>The category&#x27;s likely effect on customer or internal cycle time produces a 53/100 delay score.</li>
+                    <li>The suggested pattern—Structured intake form—can be implemented with explicit rules (score 100/100).</li>
+                </ul>
+            </div>
+            
+            <div class="card compact">
+                <h4>Scattered Customer Information</h4>
+                <ul>
+                    <li>Information Management work is likely to recur whenever the described workflow runs (score 84/100).</li>
+                    <li>The evidence indicates ongoing staff handling and handoffs (score 84/100).</li>
+                    <li>A high-severity bottleneck can create inconsistent or missing records (score 90/100).</li>
+                    <li>The category&#x27;s likely effect on customer or internal cycle time produces a 76/100 delay score.</li>
+                    <li>The suggested pattern—Centralized customer database—can be implemented with explicit rules (score 88/100).</li>
+                </ul>
+            </div>
+            
+            <div class="card compact">
+                <h4>Delayed Customer Response</h4>
+                <ul>
+                    <li>Customer Response work is likely to recur whenever the described workflow runs (score 80/100).</li>
+                    <li>The evidence indicates ongoing staff handling and handoffs (score 80/100).</li>
+                    <li>A high-severity bottleneck can create inconsistent or missing records (score 68/100).</li>
+                    <li>The category&#x27;s likely effect on customer or internal cycle time produces a 100/100 delay score.</li>
+                    <li>The suggested pattern—Response template assistant—can be implemented with explicit rules (score 90/100).</li>
+                </ul>
+            </div>
+            
+            <div class="card compact">
+                <h4>Manual Reporting</h4>
+                <ul>
+                    <li>Reporting work is likely to recur whenever the described workflow runs (score 85/100).</li>
+                    <li>The evidence indicates ongoing staff handling and handoffs (score 82/100).</li>
+                    <li>A medium-severity bottleneck can create inconsistent or missing records (score 65/100).</li>
+                    <li>The category&#x27;s likely effect on customer or internal cycle time produces a 45/100 delay score.</li>
+                    <li>The suggested pattern—Weekly report generator—can be implemented with explicit rules (score 92/100).</li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>ROI Estimate</h2>
+            <div class="grid">
+                <div class="summary-card"><div class="label">Monthly Hours Saved</div><div class="value">44.0–83.0 hours</div></div>
+                <div class="summary-card"><div class="label">Monthly Cost Saved</div><div class="value">AUD 1,320.0–AUD 2,490.0</div></div>
+                <div class="summary-card"><div class="label">Hourly Cost Assumption</div><div class="value">AUD 30.00/hour</div></div>
+                <div class="summary-card"><div class="label">Business Size</div><div class="value">small</div></div>
+                <div class="summary-card"><div class="label">Workflow Frequency</div><div class="value">weekly</div></div>
+                <div class="summary-card"><div class="label">Confidence Level</div><div class="value">Medium</div></div>
+            </div>
+            <div class="note">
+                <strong>Assumption:</strong> Directional estimate using AUD 30.00/hour, a small business multiplier, and weekly workflow frequency.
+                <ul><li>This estimate supports workflow planning and is not a financial promise.</li>
+<li>Actual savings depend on team adoption, implementation quality, and tool selection.</li>
+<li>Validate the estimate against measured baseline hours and a stable pilot workflow.</li></ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Implementation Roadmap</h2>
+            <h3>7-Day MVP</h3>
+            <div class="card compact">
+                <h4>Create a CRM-lite lead tracker with status, owner, and next-action date.</h4>
+                <p>A small visible improvement creates evidence before broader investment.</p>
+                <p>
+                    <span class="badge">No Structured Lead Tracking</span>
+                    <span class="badge">Medium Difficulty</span>
+                </p>
+            </div>
+            
+            <div class="card compact">
+                <h4>Configure follow-up reminders and an overdue-task view.</h4>
+                <p>A small visible improvement creates evidence before broader investment.</p>
+                <p>
+                    <span class="badge">Manual Follow-up</span>
+                    <span class="badge">Easy Difficulty</span>
+                </p>
+            </div>
+            
+            <div class="card compact">
+                <h4>Create a structured intake form with required fields and one destination table.</h4>
+                <p>A small visible improvement creates evidence before broader investment.</p>
+                <p>
+                    <span class="badge">Manual Data Entry</span>
+                    <span class="badge">Easy Difficulty</span>
+                </p>
+            </div>
+            
+            <div class="card compact">
+                <h4>Define one shared customer record and migrate a small fictional pilot set.</h4>
+                <p>A small visible improvement creates evidence before broader investment.</p>
+                <p>
+                    <span class="badge">Scattered Customer Information</span>
+                    <span class="badge">Medium Difficulty</span>
+                </p>
+            </div>
+            
+            <h3>30-Day Optimization</h3>
+            <div class="card compact">
+                <h4>Build a lightweight dashboard for volume, owner, status, and overdue work.</h4>
+                <p>Shared visibility reduces manual status chasing and supports measurement.</p>
+                <p>
+                    <span class="badge">No Structured Lead Tracking</span>
+                    <span class="badge">Medium Difficulty</span>
+                </p>
+            </div>
+            
+            <div class="card compact">
+                <h4>Create approved response templates and a human-review rule for exceptions.</h4>
+                <p>Templates improve response consistency without removing human judgment.</p>
+                <p>
+                    <span class="badge">No Structured Lead Tracking</span>
+                    <span class="badge">Medium Difficulty</span>
+                </p>
+            </div>
+            
+            <div class="card compact">
+                <h4>Document the SOP and automate the weekly summary from structured fields.</h4>
+                <p>A documented process and recurring report make the pilot repeatable.</p>
+                <p>
+                    <span class="badge">No Structured Lead Tracking</span>
+                    <span class="badge">Medium Difficulty</span>
+                </p>
+            </div>
+            
+            <h3>90-Day Systemization</h3>
+            <div class="card compact">
+                <h4>Connect successful pilot steps into a CRM-lite workflow and knowledge base.</h4>
+                <p>Systemization preserves customer context and reusable operating knowledge.</p>
+                <p>
+                    <span class="badge">No Structured Lead Tracking</span>
+                    <span class="badge">Hard Difficulty</span>
+                </p>
+            </div>
+            
+            <div class="card compact">
+                <h4>Define role ownership, access, exception handling, and fallback procedures.</h4>
+                <p>Clear accountability keeps automation safe when unusual cases occur.</p>
+                <p>
+                    <span class="badge">Cross-workflow governance</span>
+                    <span class="badge">Medium Difficulty</span>
+                </p>
+            </div>
+            
+            <div class="card compact">
+                <h4>Monitor response time, manual hours, error rate, and lead conversion KPIs.</h4>
+                <p>KPI monitoring shows whether automation is creating real operational value.</p>
+                <p>
+                    <span class="badge">Cross-workflow measurement</span>
+                    <span class="badge">Medium Difficulty</span>
+                </p>
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>Consultant Notes</h2>
+            <div class="card">
+                <ul>
+                    <li>Start with high-priority, low-difficulty workflow fixes.</li>
+                    <li>Avoid automating a broken process without first standardizing it.</li>
+                    <li>Track before/after metrics for response time, manual hours, and lead conversion.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Disclaimer</h2>
+            <div class="note">This report is for educational and workflow planning purposes only. It does not replace professional operational, legal, financial, or cybersecurity advice.</div>
+        </section>
+
+        <p class="footer">
+            Generated by NextOpsAgent from fictional or user-provided workflow text.
+        </p>
+    </main>
+</body>
+</html>
