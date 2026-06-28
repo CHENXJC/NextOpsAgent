@@ -250,3 +250,9 @@ This project intentionally does not include:
 
 This project is for educational and workflow planning purposes only. It does not
 replace professional operational, legal, financial, or cybersecurity advice.
+
+## Managed through AgentHubControlCenter
+
+This project is part of my local-first AI Agent portfolio and can be managed through [AgentHubControlCenter](https://github.com/CHENXJC/AgentHubControlCenter), the central command center for agent manifests, safe actions, useful signals, workflow simulations, connector readiness, approval gates, and public-safe reporting.
+
+NextOpsAgent is registered as an SME next-action recommendation module in AgentHubControlCenter.

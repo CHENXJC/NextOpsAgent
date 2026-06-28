@@ -1,0 +1,165 @@
+{
+  "agent_id": "next_ops_agent",
+  "agent_name": "NextOpsAgent",
+  "category": "sme_operations",
+  "project_type": "Agent",
+  "description": "SME workflow diagnosis Agent for bottleneck detection, automation scoring, ROI estimates, and consulting-style reports.",
+  "project_path": "F:\\AIProjects\\NextOpsAgent",
+  "status": "Complete",
+  "version": "NEXT-OPS-008-COMPLETE-NO-PIN",
+  "inputs": [
+    "workflow_steps",
+    "bottleneck_notes",
+    "business_context",
+    "automation_rules",
+    "demo_process_data"
+  ],
+  "outputs": [
+    "automation_score",
+    "roi_estimate",
+    "workflow_report",
+    "bottleneck_summary",
+    "html_export"
+  ],
+  "actions": [
+    {
+      "action_id": "view_project_status",
+      "label": "View project status",
+      "description": "Review the local PROJECT_STATUS.md checkpoint file.",
+      "action_type": "report_view",
+      "execution_mode": "not_executable",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "Open PROJECT_STATUS.md in the project folder.",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#next-ops-agent-view-project-status",
+      "expected_output": "User can see the current checkpoint, validation status, and next stage.",
+      "safety_note": "Display/manual metadata only; AgentHub does not execute this action.",
+      "connector_required": "none",
+      "status": "display_only",
+      "enabled": true,
+      "safe_mode": true
+    },
+    {
+      "action_id": "view_agent_manifest",
+      "label": "View agent manifest",
+      "description": "Review the local agent_manifest.json metadata file.",
+      "action_type": "report_view",
+      "execution_mode": "not_executable",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "Open agent_manifest.json in the project folder.",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#next-ops-agent-view-agent-manifest",
+      "expected_output": "User can inspect declared inputs, outputs, actions, connectors, and safety mode.",
+      "safety_note": "Display/manual metadata only; AgentHub does not execute this action.",
+      "connector_required": "none",
+      "status": "display_only",
+      "enabled": true,
+      "safe_mode": true
+    },
+    {
+      "action_id": "open_project_folder",
+      "label": "Open project folder",
+      "description": "Open the local project folder manually outside AgentHub.",
+      "action_type": "local_link",
+      "execution_mode": "manual_only",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "explorer \"F:\\AIProjects\\NextOpsAgent\"",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#next-ops-agent-open-project-folder",
+      "expected_output": "User manually opens the local project folder.",
+      "safety_note": "Display/manual metadata only; AgentHub does not execute this action.",
+      "connector_required": "none",
+      "status": "manual_ready",
+      "enabled": true,
+      "safe_mode": true
+    },
+    {
+      "action_id": "view_latest_report",
+      "label": "View latest report",
+      "description": "Review the latest public-safe sample report or exported summary.",
+      "action_type": "report_view",
+      "execution_mode": "not_executable",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "Review the latest public-safe report or README demo output manually.",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#next-ops-agent-view-latest-report",
+      "expected_output": "User can review a public-safe report or sample output reference.",
+      "safety_note": "Display/manual metadata only; AgentHub does not execute this action.",
+      "connector_required": "none",
+      "status": "display_only",
+      "enabled": true,
+      "safe_mode": true
+    },
+    {
+      "action_id": "generate_codex_prompt",
+      "label": "Generate Codex prompt",
+      "description": "Generate a copyable Codex prompt for the next safe project task.",
+      "action_type": "codex_prompt",
+      "execution_mode": "template_only",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "Copy the Agent metadata into the next Codex task prompt.",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#next-ops-agent-generate-codex-prompt",
+      "expected_output": "A copyable prompt template for the next safe Codex task.",
+      "safety_note": "Prompt is for manual copy into Codex; it does not execute project code.",
+      "connector_required": "none",
+      "status": "template_ready",
+      "enabled": true,
+      "safe_mode": true
+    }
+  ],
+  "connectors": [
+    {
+      "connector_id": "local_filesystem",
+      "label": "Local project files",
+      "status": "available_local",
+      "mode": "read_only_manifest_context",
+      "safe_mode": true
+    },
+    {
+      "connector_id": "github_showcase",
+      "label": "GitHub showcase",
+      "status": "available_link",
+      "mode": "display_only",
+      "safe_mode": true
+    },
+    {
+      "connector_id": "streamlit_local_app",
+      "label": "Streamlit local dashboard",
+      "status": "manual_launch",
+      "mode": "display_command_only",
+      "safe_mode": true
+    },
+    {
+      "connector_id": "airtable",
+      "label": "Airtable",
+      "status": "optional_future",
+      "mode": "not_connected",
+      "safe_mode": true
+    },
+    {
+      "connector_id": "notion",
+      "label": "Notion",
+      "status": "planned",
+      "mode": "not_connected",
+      "safe_mode": true
+    }
+  ],
+  "demo_mode": true,
+  "safe_mode": true,
+  "last_run": "Not tracked yet",
+  "next_recommended_action": "Refresh public-safe screenshots later; keep feature expansion paused.",
+  "github_repo": "https://github.com/CHENXJC/NextOpsAgent",
+  "dashboard_url": "",
+  "tags": [
+    "Python",
+    "Streamlit",
+    "SME Workflow",
+    "Automation Scoring",
+    "HTML Export"
+  ],
+  "owner": "BPCT / CHENXJC",
+  "public_showcase_status": "GitHub Public Showcase",
+  "pin_status": "Not pinned",
+  "action_schema_version": "HUB-V2-005"
+}
